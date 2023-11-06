@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<title>Esucri 19-09-2022</title>
+		<style>
+		
+			#nome {
+				font-family: Lucida console;
+				background: pink;
+				border: 2px double gray;
+				text-align: right;
+				color: red;
+			}
+		
+			#personagem {
+				background-image: url('icon.PNG');
+				background-repeat: no-repeat;
+				padding-left: 16px;
+			}
+			
+			fieldset {
+				border: 2px dashed red;
+			}
+			
+			legend {
+				color: green;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<form action="mailto:contato@esucri.com.br" method="post">
+		
+		<label for="nome">Nome</label><br>
+		<input type="text" name="nome" id="nome"><br><br>
+		
+		<label for="Personagem">Personagem</label><br>
+		<input type="text" name="personagem" id="personagem"><br><br>
+		
+			<fieldset> <!--Criar grupos - Faz uma borda - pode chamar o border-->
+				<legend>Sexo</legend><!--Texto em destaque-->
+				
+				<input type="radio" name="sexo" value="Masculino" checked="checked">
+				<label for="sexoMasculino">Masculino</label>
+			
+				<input type="radio" name="sexo" value="Feminino" checked="checked">
+				<label for="sexoFeminino">Feminino</label>
+			
+				<input type="radio" name="sexo" value="Não binário" checked="checked">
+				<label for="sexoNaoBinario">Não Binário</label>
+			</fieldset>
+			
+			<button type="submit">Enviar</button>
+			<button type="reset">Limpar</button>
+			<button type="button">Clique aqui</button>		
+		</form>
+		
+	</body>
+	
+</html>

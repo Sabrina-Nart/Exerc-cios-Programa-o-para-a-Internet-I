@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<title>Esucri 26-09-2022</title>
+		<style type="text/css">
+
+		input {
+			border: 1px solid red;
+		}
+		
+		input:focus { 
+			border-color: green;
+		}
+			
+		</style>
+	</head>
+	
+	<body>
+		<form action="mailto:contato@esucri.com.br" method="post">
+			<label for="cep">CEP</label><br>
+			<input type="text" name="cep" value="88811240" maxlength="8"><br><br>
+			
+			<label for="senha">Senha</label><br> 
+			<input type="password" name="senha" id="senha" value="123456" maxlength="10"><br><br> <!--Oa campos type e name são obrigatório - uma forma de fazer uma referência no item-->
+			
+			<label for="nascimento">Nascimento</label><br>
+			<input type="date" name="nascimento" id="nascimento" value="2022-08-08" min="2022-08-01" max="2022-09-10"><br><br>
+			
+			<label for="valor">Valor</label><br>
+			<input type="number" name="valor" id="valor" value="10" min="0" max="10"><br><br><!--Vai de 1 em 1-->
+			
+			<input type="hidden" name="codigo" value="123">
+			
+			<input type="file" name="arquivo"><!--Fazer uplode de arquivo-o que importa é o type o name-->
+			<input type="file" name="arquivo" id="arquivo"><br><br>
+			
+			<input type="checkbox" name="concordo" checked="checked"><!--Já vir marcado-->
+			<label for="concordo">Concordo</label><br><br>
+			
+			<input type="radio" name="relatorio" id="relatorio" value="Analitico" checked="checked">
+			<label for="relatorioA">Analitico</label><br>
+			<input type="radio" name="relatorio" value="Sintetico"><!--O name é para saber que eu estou fazendo alternancia de valores-->
+			<label for="relatorioS">Sintetico</label><br><br>
+			
+			<label for="marca">Marca</label><br>
+			<select name="marca"> <!--Gera uma ComboBox List-->
+				<option value="ford">FORD</option><!--O que vai ser passado é o que está no value-->
+				<option value="gm">GM</option><!--O que está em letra maíscula é mostrado para o usuário-->
+				<option value="fiat" select="selected">FIAT</option>
+				<option value="kia">KIA</option>
+			</select><br><br>
+			
+			<label for="materias">Materias</label><br>
+			<select name="materias" multiple="multiple">
+				<option value="pi1">Programação para Internet 1</option>
+				<option value="pi2">Programação para Internet 2</option>
+				
+				<option value="poo1">Programação Orientada a Objetos 1</option>
+				<option value="poo2">Programação Orientada a Objetos 2</option>
+				<option value="poo3">Programação Orientada a Objetos 3</option>
+				
+				<option value="pd1">Banco de Daqdos 1</option>
+				<option value="pd2">Banco de Daqdos 2</option>
+			</select><br><br>
+			
+			<label for="comentario">Comentário<label><br>
+			<textarea name="comentario" id="comentario" rows="5" cols="10">Comentário</textarea><br><br>	
+			
+		</form>
+	
+	</body>	
+</html>
